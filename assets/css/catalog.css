@@ -13,7 +13,26 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.hide{
+	display: none;
+}
 /*End Starter CSS*/
+
+.search-wrapper {
+	margin-top: 65px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+}
+
+#filter-label {
+	font-size: 1rem;
+}
+
+#filter {
+	font-size: 1rem;
+}
 
 #card-container {
 	margin-top: 65px;
@@ -45,4 +64,99 @@ img {
 .card-description-col {
 	display: flex;
 	justify-content: center;
+}
+
+/*My cards*/
+
+.exercise-cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, 360px);
+	gap: 25px;
+}
+
+.exercise-cards-card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(0, 0, 0, 0.175);
+	border-radius: 10px;
+	height: 500px;
+}
+
+.exercise-cards-card-image {
+	height: 100px;
+	width: 360px;
+	padding: 0;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.exercise-cards-card-title {
+	margin-top: .25rem;
+	font-size: 1.25rem;
+	padding: 0 10px 0 10px;
+}
+
+.exercise-cards-card-hr {
+	color: black;
+	
+}
+
+.exercise-cards-card-description {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0 10px 0 10px;
+}
+
+.exercise-cards-card-button-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.exercise-cards-card-button {
+	background-color: #0d6efd;
+	border-color: #0d6efd;
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 5px;
+	color: white;
+
+}
+
+.exercise-cards-card-button:hover {
+	background-color: #0b5ed7;
+}
+
+@media screen and (max-width: 1540px) {
+
+	.exercise-cards-container {
+		display: grid;
+		grid-template-columns: repeat(3, 360px);
+		gap: 25px;
+	}
+	
+}
+
+@media screen and (max-width: 1150px) {
+
+	.exercise-cards-container {
+		display: grid;
+		grid-template-columns: repeat(2, 360px);
+		gap: 25px;
+	}
+	
+}
+
+@media screen and (max-width: 765px) {
+
+	.exercise-cards-container {
+		display: grid;
+		grid-template-columns: repeat(1, 360px);
+		gap: 25px;
+	}
+	
 }
