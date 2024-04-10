@@ -13,10 +13,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
-.hide{
-	display: none;
-}
 /*End Starter CSS*/
 
 .search-wrapper {
@@ -130,6 +126,12 @@ img {
 .exercise-cards-card-button:hover {
 	background-color: #0b5ed7;
 }
+
+/* hide class */
+.hide{
+	display: none;
+}
+/* hide class end*/
 
 @media screen and (max-width: 1540px) {
 

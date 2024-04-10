@@ -1,53 +1,17 @@
-const exerciseCardTemplate = document.querySelector("[data-exercise-card-template]");
-const exerciseCardContainer = document.querySelector("[data-exercise-card-container]");
-const searchInput = document.querySelector("[data-filter]");
+const exerciseCardTemplate = document.querySelector("[data-exercise-card-template]")
+const exerciseCardContainer = document.querySelector("[data-exercise-card-container]")
+const searchInput = document.querySelector("[data-filter]")
 
-let exercisesArray = [];
+let exercisesArray = []
 
 searchInput.addEventListener("input", e => {
-	const value = e.target.value.toLowerCase();
-	console.log(exercisesArray)
+	const value = e.target.value.toLowerCase()
 	exercisesArray.forEach(exercise => {
 		const isVisible = exercise.title.toLowerCase().includes(value)
 		exercise.element.classList.toggle("hide", !isVisible)
-		exercise.element.classList.toggle("exercise-cards-card", !isVisible)
 	})
-	
+	console.log(exercisesArray)
 })
-
-/*fetch("https://dummyjson.com/products")
-	//.then(res => console.log(res))
-	.then((response) => {
-		return response.json();
-	})
-	.then((res) => {
-		const data = res.products;
-		let cards = "";
-		productsArray = data.map((product) => {
-			cards += `<div class="col"><div class="card exercise-card" style="width: 18rem; height: 500px;">
-        <img src="${product.thumbnail}" class="card-img-top catalog-img" alt="${product.title}"/>
-        <div class="card-body">
-				<div class="card-description-top">
-          <h5 class="card-title">${product.title}</h5>
-          <p class="card-text">${product.description}</p>
-					</div>
-					<hr>
-          <div class="row card-description-bottom">
-					<p class="col-6 card-description-col"><label>Name: </label><span>Hi</span></p>
-					<p class="col-6 card-description-col"><label>Area: </label><span>Hello</span></p>
-           <p class="col card-description-col"><label>Name: </label><span>Hi</span></p>
-						<p class="col card-description-col"><label>Area: </label><span>Hello</span></p>
-					</div>
-					<div class="view-exercise-button">
-          <a href="#" class="btn btn-primary">View Exercise</a>
-					</div>
-        </div>
-      </div></div>`;
-	  return {title: product.title, description: product.description}
-		});
-		document.getElementById("exercise-cards").innerHTML = cards;
-	})
-	.catch((error) => console.log(error));*/
 
 	/*let url = 'https://exercisedb.p.rapidapi.com/exercises?limit=1500';
     let options = {
@@ -108,6 +72,6 @@ fetch("https://dummyjson.com/products")
 		cardTargetArea.textContent = exercise.title;
 		cardSecondaryMuscles.textContent = exercise.title;
 		exerciseCardContainer.append(card);
-		return { thumbnail: exercise.thumbnail, title: exercise.title, element: card }
+		return { title: exercise.title, element: card }
 	});
 })
