@@ -7,13 +7,13 @@ let exercisesArray = [];
 searchInput.addEventListener("input", (e) => {
 	const value = e.target.value.toLowerCase();
 	exercisesArray.forEach((exercise) => {
-		const isVisible = exercise.title.toLowerCase().includes(value);
+		const isVisible = exercise.name.toLowerCase().includes(value);
 		exercise.element.classList.toggle("hide", !isVisible);
 	});
 	console.log(exercisesArray);
 });
 
-/*let url = "https://exercisedb.p.rapidapi.com/exercises?limit=1500";
+let url = "https://exercisedb.p.rapidapi.com/exercises?limit=1500";
 let options = {
 	method: "GET",
 	headers: {
@@ -36,7 +36,8 @@ fetch(url, options)
 			const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
 
 			cardImage.src = exercise.gifUrl;
-			cardTitle.textContent = exercise.name;
+			cardImage.alt = exercise.name;
+			cardTitle.textContent = exercise.name.toUpperCase();
 			cardBodyPart.textContent = exercise.bodyPart;
 			cardEquipment.textContent = exercise.equipment;
 			cardTargetArea.textContent = exercise.target;
@@ -45,7 +46,7 @@ fetch(url, options)
 			return { name: exercise.name, element: card };
 		});
 	})
-	.catch((error) => console.log(error));*/
+	.catch((error) => console.log(error));
 
 /*fetch("https://dummyjson.com/products")
 .then(res => res.json())

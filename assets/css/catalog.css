@@ -30,6 +30,21 @@ img {
 	font-size: 1rem;
 }
 
+.hero-banner {
+    display: flex;
+    margin-top: 55px;
+    background-image: url("../images/pexels-victor-freitas-841130.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    
+  }
+
 #card-container {
 	margin-top: 65px;
 }
@@ -103,6 +118,7 @@ img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	padding: 0 10px 0 10px;
+	height: 375px;
 }
 
 .exercise-cards-card-button-container {
@@ -120,7 +136,7 @@ img {
 	font-size: 1rem;
 	padding: 5px;
 	color: white;
-
+	margin-bottom: 25px;
 }
 
 .exercise-cards-card-button:hover {
