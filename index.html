@@ -9,12 +9,111 @@
     <meta name="author" content="Malachi Barton">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
 </head>
 
 <body>
-    <main class="container-fluid p-0">
+  <main>
+    <header>
+      <div class="logo">ExC</div>
+      <ul class="menu">
+        <li>Home</li>
+        <li>Catalog</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="search">
+        <ion-icon name="search-outline" class="search-icon"></ion-icon>
+      </div>
+    </header>
+
+    <div class="slider">
+      <div class="list">
+        <div class="item active">
+          <img src="assets/images/pexels-victor-freitas-841130.jpg">
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/pexels-karl-solano-2729899.jpg">
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/pexels-leon-ardho-1552242.jpg">
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/pexels-william-choquette-1954524.jpg">
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 4</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="assets/images/pexels-victor-freitas-841130.jpg">
+          <div class="content">
+            Title
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/pexels-karl-solano-2729899.jpg">
+          <div class="content">
+            Title
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/pexels-leon-ardho-1552242.jpg">
+          <div class="content">
+            Title
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/pexels-william-choquette-1954524.jpg">
+          <div class="content">
+            Title
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam dolore quibusdam laborum amet, dolorem illum voluptatum pariatur nihil quod consequatur fugit nam doloremque eaque molestias dolorum, et veniam officiis, nulla eum reiciendis illo. Dolorum voluptatibus sunt iure nisi quia expedita eos qui minus. Deleniti aut rerum perspiciatis qui libero!
+      </p>
+    </section>
+
+  </main>
+    <!--<main class="container-fluid p-0">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Exercise Catalog</a>
@@ -109,7 +208,17 @@
             <h2>Catalog Preview</h2>
             <section id="catalog-preview">
               <div class="exercise-cards-card" id="card-1">
-              <img src="https://v2.exercisedb.io/image/LZcgDnTse0YQi5" class="exercise-cards-card-image" />
+        <div class="item">
+          <img src="assets/images/pexels-victor-freitas-841130.jpg">
+          <div class="content">
+            <p>design</p>
+            <h2>Slider 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi, architecto commodi quidem ipsum iusto quas nostrum illo dolores qui provident. Consequuntur repellat illo minus cupiditate magnam ad vero nostrum.
+            </p>
+          </div>
+        </div>              <img src="assets/images/3-4-situp.gif" class="exercise-cards-card-image" />
               <h5 class="exercise-cards-card-title" >3/4 sit-up</h5>
               <hr class="exercise-cards-card-hr">
               <div class="exercise-cards-card-description">
@@ -127,7 +236,7 @@
               </div>
               </div>
               <div class="exercise-cards-card" id="card-2">
-              <img src="https://v2.exercisedb.io/image/ni7BPDaKbkiZWE" class="exercise-cards-card-image"/>
+              <img src="assets/images/side-bend.gif" class="exercise-cards-card-image"/>
               <h5 class="exercise-cards-card-title">45° side bend</h5>
               <hr class="exercise-cards-card-hr">
               <div class="exercise-cards-card-description">
@@ -145,7 +254,7 @@
               </div>
               </div>
               <div class="exercise-cards-card" id="card-3">
-              <img src="https://v2.exercisedb.io/image/hD8oL84GIFC1l3" class="exercise-cards-card-image"/>
+              <img src="assets/images/air-bike.gif" class="exercise-cards-card-image"/>
               <h5 class="exercise-cards-card-title">air bike</h5>
               <hr class="exercise-cards-card-hr">
               <div class="exercise-cards-card-description">
@@ -163,7 +272,7 @@
               </div>
               </div>
               <div class="exercise-cards-card" id="card-4">
-              <img src="https://v2.exercisedb.io/image/dM1Ao7lCMr7bhs" class="exercise-cards-card-image"/>
+              <img src="assets/images/quad-stretch.gif" class="exercise-cards-card-image"/>
               <h5 class="exercise-cards-card-title">all fours quad stretch</h5>
               <hr class="exercise-cards-card-hr">
               <div class="exercise-cards-card-description">
@@ -181,7 +290,7 @@
               </div>
               </div>
               <div class="exercise-cards-card" id="card-5">
-                <img src="https://v2.exercisedb.io/image/nqmshORSSDuDz0" class="exercise-cards-card-image"/>
+                <img src="assets/images/alt-lat-pull.gif" class="exercise-cards-card-image"/>
                 <h5 class="exercise-cards-card-title">alternate lateral pulldown</h5>
                 <hr class="exercise-cards-card-hr">
                 <div class="exercise-cards-card-description">
@@ -199,7 +308,7 @@
                 </div>
                 </div>
               <div class="exercise-cards-card" id="card-6">
-                  <img src="https://v2.exercisedb.io/image/Cic8oFo-ZbEjl1" class="exercise-cards-card-image"/>
+                  <img src="assets/images/ankle-circles.gif" class="exercise-cards-card-image"/>
                   <h5 class="exercise-cards-card-title">ankle circles</h5>
                   <hr class="exercise-cards-card-hr">
                   <div class="exercise-cards-card-description">
@@ -235,8 +344,9 @@
                 <li><a href="exercise.html">Exercise HTML</a></li>
                 <li><a href="catalog.html">Catalog HTML</a></li>
             </ul>
-        </section>
+        </section>-->
     </main>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/searchbar.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
