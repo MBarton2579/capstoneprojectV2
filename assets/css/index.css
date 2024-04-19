@@ -11,13 +11,18 @@ body {
   font-family: Poppins;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.container {
+  margin: 50px;
+  padding: 25px;
 }
 /*End Starter CSS*/
 
@@ -68,10 +73,6 @@ img {
   }
 
   #main {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(4, 360px);
-    grid-template-rows: auto;
     
   }
 
@@ -156,4 +157,92 @@ img {
   
   .exercise-cards-card-button:hover {
     background-color: #0b5ed7;
+  }
+
+  .section-type-1 {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1em;
+    padding: 50px;
+  }
+
+  .section-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .section-content {
+    text-align: center;
+    line-height: 2;
+    align-content: center;
+
+  }
+
+  .section-content h3 {
+    margin-bottom: 50px;
+    text-decoration: black wavy underline;
+  }
+
+  .section-type-2 {
+    background-color: lightgrey;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column-reverse;
+    padding: 50px;
+    font-size: 1em;
+  }
+
+  .section-type-3 {
+    background-image: url(../images/treadmill.jpg);
+    background-position: center;
+    color: white;
+    font-size: 1em;
+    height: 300px;
+  }
+
+  .blur-colored {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .blur-colored h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+
+  .section-type-4 {
+
+  }
+
+  @media screen and (max-width: 724px) {
+    .section-type-1 {
+      grid-template-columns: 1fr;
+    }
+
+    .section-type-2 {
+      grid-template-columns: 1fr;
+      
+
+    }
+
+    .section-type-3 {
+      height: auto;
+    }
+
+    .blur-colored {
+      grid-template-columns: 1fr;
+
+    }
+
   }

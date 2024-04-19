@@ -4,7 +4,7 @@ const searchInput = document.querySelector("[data-filter]");
 
 let exercisesArray = [];
 
-searchInput.addEventListener("input", (e) => {
+/*searchInput.addEventListener("input", (e) => {
 	const value = e.target.value.toLowerCase();
 	exercisesArray.forEach((exercise) => {
 		const isVisible = exercise.name.toLowerCase().includes(value);
@@ -46,9 +46,18 @@ fetch(url, options)
 			return { name: exercise.name, element: card };
 		});
 	})
-	.catch((error) => console.log(error));
+	.catch((error) => console.log(error));*/
 
-/*fetch("https://dummyjson.com/products")
+	searchInput.addEventListener("input", (e) => {
+		const value = e.target.value.toLowerCase();
+		exercisesArray.forEach((exercise) => {
+			const isVisible = exercise.title.toLowerCase().includes(value);
+			exercise.element.classList.toggle("hide", !isVisible);
+		});
+		console.log(exercisesArray);
+	});
+
+fetch("https://dummyjson.com/products")
 .then(res => res.json())
 .then(res => {
 	const data = res.products;
@@ -70,4 +79,4 @@ fetch(url, options)
 		exerciseCardContainer.append(card);
 		return { title: exercise.title, element: card }
 	});
-})*/
+});

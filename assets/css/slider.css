@@ -1,12 +1,28 @@
+div.search {
+    display: flex;
+    justify-content: end;
+}
+
 .search-icon {
     width: 25px;
-    
+    color: white;
+}
+
+#menu-icon-container {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 32px;
+    color: white;
+    display: none;
 }
 
 header {
-    width: 1200px;
-    max-width: 90%;
+    width: 100%;
     margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     grid-template-rows: 50px;
@@ -15,6 +31,7 @@ header {
     position: relative;
     z-index: 100;
     font-size: 25px;
+    background-color: #000;
 }
 
 header .logo {
@@ -31,10 +48,20 @@ header .menu {
     font-weight: 500;
 }
 
+header a {
+    text-decoration: none;
+    color: #eee;
+}
+
+header a:hover {
+    color: lightgray;
+}
+
 .slider {
-    height: 100vh;
+    height: 75vh;
     margin-top: -50px;
     position: relative;
+    color: #eee;
 }
 
 .slider .list .item {
@@ -78,7 +105,7 @@ header .menu {
 }
 
 .slider .list .item .content h2 {
-    font-size: 100px;
+    font-size: 60px;
     margin: 0;
 }
 
@@ -178,14 +205,62 @@ header .menu {
     inset: auto 10px 10px 10px;
 }
 
+@media screen and (max-width: 1315px) {
+    .slider {
+        height: 100vh;
+    }
+}
+
 @media screen and (max-width: 678px) {
     .thumbnail {
         justify-content: start;
-    }
-    .slider .list .item .content h2 {
-        font-size: 60px;
+        
     }
     .arrows {
         top: 10%;
     }
+
+    header .menu {
+        display: none;
+    }
+
+    #menu-icon-container {
+        display: flex;
+        justify-content: end;
+        align-content: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+@media screen and (max-height: 700px) {
+    .thumbnail {
+        height: 200px;
+    }
+
+    .thumbnail .item {
+        height: 180px;
+    }
+
+    .slider .list .item .content p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-height: 1000px) {
+    .slider .list .item .content h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 324px) {
+    .thumbnail {
+        display: none;
+    }
+
 }

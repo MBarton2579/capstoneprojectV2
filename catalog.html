@@ -15,7 +15,8 @@
     <meta name="author" content="Malachi Barton" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/catalog.css" />
-    <link
+    <link rel="stylesheet" href="assets/css/slider.css"/>
+    <!--<link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -25,12 +26,12 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
-    ></script>
+    ></script>-->
   </head>
 
   <body>
-    <main class="container-fluid p-0">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <main>
+      <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Exercise Catalog</a>
           <button
@@ -102,7 +103,97 @@
       <header class="hero-banner">
         <h1>Exercise Catalog</h1>
         <p>Are you having trouble finding an exercise to accomplish your fitness goal? Our catalog provides information on over 1300 exercises. Check it Out.</p>
+      </header>-->
+
+      <header>
+        <div class="logo"><a href="index.html">ExC</a></div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search">
+          <ion-icon name="search-outline" class="search-icon"></ion-icon>
+        </div>
       </header>
+  
+      <div class="slider">
+        <div class="list">
+          <div class="item active">
+            <img src="assets/images/pexels-victor-freitas-841130.jpg">
+            <div class="content">
+              <p>design</p>
+              <h2>Slider 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pexels-karl-solano-2729899.jpg">
+            <div class="content">
+              <p>design</p>
+              <h2>Slider 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pexels-leon-ardho-1552242.jpg">
+            <div class="content">
+              <p>design</p>
+              <h2>Slider 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pexels-william-choquette-1954524.jpg">
+            <div class="content">
+              <p>design</p>
+              <h2>Slider 4</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo mollitia, voluptatibus praesentium debitis consequatur porro quod quas error quisquam optio delectus veritatis eaque molestias inventore. Asperiores eaque numquam deleniti!
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+  
+        <div class="thumbnail">
+          <div class="item active">
+            <img src="assets/images/pexels-victor-freitas-841130.jpg">
+            <div class="content">
+              Title
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pexels-karl-solano-2729899.jpg">
+            <div class="content">
+              Title
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pexels-leon-ardho-1552242.jpg">
+            <div class="content">
+              Title
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/pexels-william-choquette-1954524.jpg">
+            <div class="content">
+              Title
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="search-wrapper">
         <label for="filter" id="filter-label">Filter Exercises</label>
@@ -156,6 +247,7 @@
         <div class="row gy-2" id="exercise-cards"></div>
       </section>
     </main>
+    <script type="text/javascript" src="assets/js/slider.js"></script>
     <script type="text/javascript" src="assets/js/catalog.js"></script>
     <script
       type="module"
