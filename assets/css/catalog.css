@@ -11,8 +11,8 @@ body {
 	font-family: Poppins;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 img {
@@ -25,11 +25,12 @@ img {
 	margin-top: 65px;
 	display: flex;
 	flex-direction: column;
-	padding: 25px;
+	padding: 65px;
 }
 
 #filter-label {
 	font-size: 1rem;
+	font-weight: 400;
 }
 
 #filter {
@@ -83,6 +84,13 @@ img {
 	justify-content: center;
 }
 
+#div-container {
+	display: flex; 
+	justify-content: center; 
+	padding: 65px;
+	background-color: lightgray;
+}
+
 /*My cards*/
 
 .exercise-cards-container {
@@ -92,62 +100,71 @@ img {
 }
 
 .exercise-cards-card {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	border: 1px solid rgba(0, 0, 0, 0.175);
-	border-radius: 10px;
-	height: 500px;
-}
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: #151b1c;
+    color: #eee;
+  }
+  
+  .exercise-cards-card-image {
+    padding: 0;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+  
+  .exercise-cards-card-title {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    font-size: 1.25rem;
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
+  
+  .exercise-cards-card-hr {
+    color: black;
+    
+  }
+  
+  .exercise-cards-card-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
 
-.exercise-cards-card-image {
-	height: 100px;
-	width: 360px;
-	padding: 0;
-	object-fit: cover;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
+  .exercise-cards-card-description label {
+    color: orangered;
+  }
 
-.exercise-cards-card-title {
-	margin-top: .25rem;
-	font-size: 1.25rem;
-	padding: 0 10px 0 10px;
-}
+  .exercise-cards-card-description p {
+    font-size: small;
+  }
+  
+  .exercise-cards-card-button-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 
-.exercise-cards-card-hr {
-	color: black;
-	
-}
-
-.exercise-cards-card-description {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	padding: 0 10px 0 10px;
-	height: 375px;
-}
-
-.exercise-cards-card-button-container {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
-	margin-top: 20px;
-}
-
-.exercise-cards-card-button {
-	background-color: #0d6efd;
-	border-color: #0d6efd;
-	border-radius: 5px;
-	font-size: 1rem;
-	padding: 5px;
-	color: white;
-	margin-bottom: 25px;
-}
-
-.exercise-cards-card-button:hover {
-	background-color: #0b5ed7;
-}
+  }
+  
+  .exercise-cards-card-button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    color: #eee;
+    filter: brightness(1);
+    background-color: #1F282A;
+  
+  }
+  
+  .exercise-cards-card-button:hover {
+    background-color: #2E3C3F;
+  }
 
 /* hide class */
 .hide{
