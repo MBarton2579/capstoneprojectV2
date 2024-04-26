@@ -182,28 +182,45 @@
       <section class="search-wrapper">
         <label for="filter" id="filter-label">Filter Exercises</label>
         <input type="search" id="filter" data-filter />
+        <div class="filter-buttons">
+          <ul>
+            <li><button class="filter-button" onclick="filterExercise('all')">All</button></li>
+            <li><button class="filter-button" onclick="filterExercise('back')">Back</button></li>
+            <li><button class="filter-button" onclick="filterExercise('cardio')">Cardio</button></li>
+            <li><button class="filter-button" onclick="filterExercise('chest')">Chest</button></li>
+            <li><button class="filter-button" onclick="filterExercise('lower arms')">Lower Arms</button></li>
+            <li><button class="filter-button" onclick="filterExercise('lower legs')">Lower Legs</button></li>
+            <li><button class="filter-button" onclick="filterExercise('neck')">Neck</button></li>
+            <li><button class="filter-button" onclick="filterExercise('shoulders')">Shoulders</button></li>
+            <li><button class="filter-button" onclick="filterExercise('upper arms')">Upper Arms</button></li>
+            <li><button class="filter-button" onclick="filterExercise('upper legs')">Upper Legs</button></li>
+            <li><button class="filter-button" onclick="filterExercise('waist')">Waist</button></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-selection">
+        <ul>
+          <li><input type="button" class="p-button p-1" value="1"></input></li>
+          <li><input type="button" class="p-button p-2" value="2"></input></li>
+          <li><input type="button" class="p-button p-3" value="3"></input></li>
+          <li><input type="button" class="p-button p-4" value="4"></input></li>
+          <li><input type="button" class="p-button p-5" value="5"></input></li>
+          <li><input type="button" class="p-button p-6" value="6"></input></li>
+          <li><input type="button" class="p-button p-7" value="7"></input></li>
+          <li><input type="button" class="p-button p-8" value="8"></input></li>
+          <li><input type="button" class="p-button p-9" value="9"></input></li>
+          <li><input type="button" class="p-button p-10" value="10"></input></li>
+          <li><input type="button" class="p-button p-11" value="11"></input></li>
+          <li><input type="button" class="p-button p-12" value="12"></input></li>
+          <li><input type="button" class="p-button p-13" value="13"></input></li>
+          <li><input type="button" class="p-button p-14" value="14"></input></li>
+        </ul>
       </section>
 
       <div id="div-container">
-      <section class="exercise-cards-container" data-exercise-card-container>
-        <!--<div class="exercise-cards-card">
-          <img src="https://cdn.dummyjson.com/product-images/2/thumbnail.jpg" class="exercise-cards-card-image"/>
-          <h5 class="exercise-cards-card-title">IPhone</h5>
-          <hr class="exercise-cards-card-hr">
-          <div class="exercise-cards-card-description">
-            <label for="bodyPart" class="bodyPart-label">Body Part: </label>
-            <p class="bodyPart">Chest</p>
-            <label for="equipment" class="equipment-label">Equipment: </label>
-            <p class="equipment">Dumbell</p>
-            <label for="targetArea" class="targetArea-label"> Target Area: </label>
-            <p class="targetArea">Upper Chest</p>
-            <label for="secondaryMuscles" class="secondaryMuscles-label"> Secondary Muscles: </label>
-            <p class="secondaryMuscles">Pectorals, Front Deltoids, Mid Deltoids</p>
-          </div>
-          <div class="exercise-cards-card-button-container">
-            <button type="button" class="exercise-cards-card-button">View Exercise</button>
-          </div>
-        </div>-->
+      <section class="exercise-cards-container" data-exercise-card-container id="card-container">
+
         <template data-exercise-card-template>
           <div class="exercise-cards-card">
             <img src="" class="exercise-cards-card-image" data-card-image/>
@@ -224,12 +241,29 @@
             </div>
           </div>
         </template>
+
       </section>
     </div>
 
-      <section class="container" id="card-container">
-        <div class="row gy-2" id="exercise-cards"></div>
-      </section>
+    <section class="page-selection">
+      <ul>
+        <li><input type="button" class="p-button p-1" value="1"></input></li>
+        <li><input type="button" class="p-button p-2" value="2"></input></li>
+        <li><input type="button" class="p-button p-3" value="3"></input></li>
+        <li><input type="button" class="p-button p-4" value="4"></input></li>
+        <li><input type="button" class="p-button p-5" value="5"></input></li>
+        <li><input type="button" class="p-button p-6" value="6"></input></li>
+        <li><input type="button" class="p-button p-7" value="7"></input></li>
+        <li><input type="button" class="p-button p-8" value="8"></input></li>
+        <li><input type="button" class="p-button p-9" value="9"></input></li>
+        <li><input type="button" class="p-button p-10" value="10"></input></li>
+        <li><input type="button" class="p-button p-11" value="11"></input></li>
+        <li><input type="button" class="p-button p-12" value="12"></input></li>
+        <li><input type="button" class="p-button p-13" value="13"></input></li>
+        <li><input type="button" class="p-button p-14" value="14"></input></li>
+      </ul>
+    </section>
+
     </main>
     <script type="text/javascript" src="assets/js/slider.js"></script>
     <script type="text/javascript" src="assets/js/catalog.js"></script>

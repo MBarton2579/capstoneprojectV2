@@ -29,12 +29,14 @@ img {
 }
 
 #filter-label {
-	font-size: 1rem;
+	font-size: larger;
 	font-weight: 400;
 }
 
 #filter {
-	font-size: 1rem;
+  margin: 5px;
+	font-size: large;
+  padding: 5px;
 }
 
 .hero-banner {
@@ -118,9 +120,11 @@ img {
   .exercise-cards-card-title {
     margin-top: .25rem;
     margin-bottom: .25rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 0 10px 0 10px;
     text-align: center;
+    height: 60px;
+    align-content: center;
   }
   
   .exercise-cards-card-hr {
@@ -165,6 +169,53 @@ img {
   .exercise-cards-card-button:hover {
     background-color: #2E3C3F;
   }
+
+  .page-selection ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    
+  }
+
+  .page-selection ul li {
+    margin: 5px;
+  }
+
+  .page-selection ul li input {
+    border: none;
+    text-decoration: underline;
+    font-size: medium;
+  }
+
+  .page-selection ul li input:hover {
+    cursor: pointer;
+  }
+
+  .filter-buttons ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .filter-buttons ul li {
+    margin: 25px;
+  }
+
+  .filter-buttons ul li button{
+    font-size: medium;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .filter-button-active {
+    background-color: orangered;
+  }
+
 
 /* hide class */
 .hide{
