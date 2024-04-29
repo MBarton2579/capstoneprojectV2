@@ -3,6 +3,9 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
+let menuButton = document.querySelector(".menu-icon");
+let menuCollapse = document.querySelector(".menu-collapse");
+
 let countItem = items.length;
 let itemActive = 0;
 
@@ -50,3 +53,7 @@ thumbnails.forEach((thumbnail, index) => {
         showSlider();
     })
 })
+
+menuButton.onclick = function () {
+    menuCollapse.classList.toggle("hide");
+}

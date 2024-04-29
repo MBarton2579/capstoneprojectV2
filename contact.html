@@ -10,6 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/slider.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "ky8ey6OiFjEXOvKQG",
+        });
+        })();
+    </script>
 
 </head>
 
@@ -17,18 +27,25 @@
   <main>
     <header>
       <div class="logo"><a href="#">ExC</a></div>
-      <div id="menu-icon-container">
-      <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-      </div>
       <ul class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="catalog.html">Catalog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="search">
+      <div></div>
+      <div id="menu-icon-container">
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        </div>
+        <ul class="menu-collapse hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      <!--<div class="search">
         <ion-icon name="search-outline" class="search-icon"></ion-icon>
-      </div>
+      </div>-->
     </header>
 
     <div class="slider">
@@ -97,8 +114,7 @@
         <form onsubmit="sendEmail(); reset(); return false;">
             <h3>Contact Us</h3>
             <input type="text" id="name" placeholder="Your Name" required>
-            <input type="text" id="email" placeholder="Email" required>
-            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Email" required>
             <input type="text" id="subject" placeholder="Subject" required>
             <textarea id="message" rows="4" placeholder="Type Here" required></textarea>
             <button type="submit">Send</button>

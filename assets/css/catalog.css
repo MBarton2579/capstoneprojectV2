@@ -260,4 +260,8 @@ img {
     grid-template-columns: repeat(1, minmax(280px, 380px));
   }
 
+  .page-selection ul li input {
+    font-size: small;
+  }
+
 }

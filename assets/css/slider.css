@@ -10,13 +10,16 @@ div.search {
 
 #menu-icon-container {
     display: none;
+    justify-content: end;
 }
 
 .menu-icon {
     font-size: 32px;
     color: white;
     display: none;
+    cursor: pointer;
 }
+
 
 header {
     width: 100%;
@@ -205,6 +208,10 @@ header a:hover {
     inset: auto 10px 10px 10px;
 }
 
+.hide {
+    display: none;
+}
+
 @media screen and (max-width: 1315px) {
     .slider {
         height: 100vh;
@@ -226,8 +233,7 @@ header a:hover {
 
     #menu-icon-container {
         display: flex;
-        justify-content: end;
-        align-content: center;
+        flex-wrap: wrap;
     }
 
     .menu-icon {
