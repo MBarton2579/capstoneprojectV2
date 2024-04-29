@@ -65,6 +65,23 @@ form button:hover {
     background-color: rgb(255, 81, 18);
 }
 
+.links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.links a{
+    color: black;
+    font-size: 25px;
+}
+
+.links a:visited {
+    color: black;
+}
+
 footer {
     color: #eee;
     background-color: black;
