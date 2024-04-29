@@ -112,6 +112,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -120,6 +121,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -162,6 +170,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -170,6 +179,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -212,6 +228,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -220,6 +237,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -262,6 +286,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -270,6 +295,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -312,6 +344,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -320,6 +353,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -362,6 +402,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -370,6 +411,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -412,6 +460,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -420,6 +469,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -462,6 +518,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -470,6 +527,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -512,6 +576,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -520,6 +585,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -562,6 +634,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -570,6 +643,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -612,6 +692,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -620,6 +701,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -662,6 +750,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -670,6 +759,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -712,6 +808,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -720,6 +817,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
@@ -762,6 +866,7 @@ fetch(url, options)
 					const cardEquipment = card.querySelector("[data-card-equipment]");
 					const cardTargetArea = card.querySelector("[data-card-target-area]");
 					const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+					const cardButton = card.querySelector("[data-card-button]");
 		
 					cardImage.src = exercise.gifUrl;
 					cardImage.alt = exercise.name;
@@ -770,6 +875,13 @@ fetch(url, options)
 					cardEquipment.textContent = exercise.equipment;
 					cardTargetArea.textContent = exercise.target;
 					cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+					cardButton.value = exercise.id;
+					cardButton.onclick = function() {
+						localStorage.setItem('button-value', cardButton.value);
+		
+						window.location.href = "exercise.html";
+		
+					};
 					exerciseCardContainer.append(card);
 					return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 				});
