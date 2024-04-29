@@ -23,7 +23,7 @@ window.onload = function() {
 
 	filterExercise("all");
 	searchInput.addEventListener("input", (e) => {
-		filterExercise('all');
+		//filterExercise('all');
 		const value = e.target.value.toLowerCase();
 		exercisesArray.forEach((exercise) => {
 		const isVisible = exercise.name.toLowerCase().includes(value);
