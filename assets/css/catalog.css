@@ -252,3 +252,12 @@ img {
 	}
 	
 }
+
+@media screen and (max-width: 380px) {
+  
+  .exercise-cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(280px, 380px));
+  }
+
+}

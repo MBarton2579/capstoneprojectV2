@@ -22,13 +22,14 @@ let exercisesArray = [];
 window.onload = function() {
 
 	filterExercise("all");
-searchInput.addEventListener("input", (e) => {
-const value = e.target.value.toLowerCase();
-exercisesArray.forEach((exercise) => {
-	const isVisible = exercise.name.toLowerCase().includes(value);
-	exercise.element.classList.toggle("hide", !isVisible);
-});
-console.log(exercisesArray);
+	searchInput.addEventListener("input", (e) => {
+		filterExercise('all');
+		const value = e.target.value.toLowerCase();
+		exercisesArray.forEach((exercise) => {
+		const isVisible = exercise.name.toLowerCase().includes(value);
+		exercise.element.classList.toggle("hide", !isVisible);
+	});
+	console.log(exercisesArray);
 });
 
 let url = "https://exercisedb.p.rapidapi.com/exercises?limit=100";
@@ -52,6 +53,7 @@ fetch(url, options)
 			const cardEquipment = card.querySelector("[data-card-equipment]");
 			const cardTargetArea = card.querySelector("[data-card-target-area]");
 			const cardSecondaryMuscles = card.querySelector("[data-card-secondary-muscles]");
+			const cardButton = card.querySelector("[data-card-button]");
 
 			cardImage.src = exercise.gifUrl;
 			cardImage.alt = exercise.name;
@@ -60,16 +62,26 @@ fetch(url, options)
 			cardEquipment.textContent = exercise.equipment;
 			cardTargetArea.textContent = exercise.target;
 			cardSecondaryMuscles.textContent = exercise.secondaryMuscles;
+			cardButton.value = exercise.id;
+			cardButton.onclick = function() {
+        		localStorage.setItem('button-value', cardButton.value);
+
+        		window.location.href = "exercise.html";
+
+    		};
 			exerciseCardContainer.append(card);
 			return { name: exercise.name, bodyPart: exercise.bodyPart, element: card };
 		});
 	})
-	.catch((error) => console.log(error));};
+	.catch((error) => console.log(error));
+
+};
 
 	pageButton1.onclick = function(){
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -119,6 +131,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -168,6 +181,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -217,6 +231,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -266,6 +281,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -315,6 +331,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -364,6 +381,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -412,7 +430,8 @@ fetch(url, options)
 	pageButton8.onclick = function(){
 
 		exerciseCardContainer.innerHTML = "";
-
+		
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -462,6 +481,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -511,6 +531,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -560,6 +581,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -609,6 +631,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -658,6 +681,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -707,6 +731,7 @@ fetch(url, options)
 
 		exerciseCardContainer.innerHTML = "";
 
+		filterExercise("all");
 		searchInput.addEventListener("input", (e) => {
 			const value = e.target.value.toLowerCase();
 			exercisesArray.forEach((exercise) => {
@@ -831,7 +856,6 @@ fetch(url, options)
 				break;
 		}
 	  })*/
-
 
 	/*searchInput.addEventListener("input", (e) => {
 		const value = e.target.value.toLowerCase();
